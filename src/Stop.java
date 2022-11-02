@@ -13,10 +13,10 @@ public class Stop {
             logic.add(input);
         }
         logic.countWords();
-        System.out.println("Antal rader: " + logic.getLineCount());
-        System.out.println("Antal tecken: " + logic.getCharCount());
-        System.out.println("Antal ord: " + logic.getWordCount());
-        System.out.println("Längsta ord: " + logic.getLongestWord());
+        System.out.println("Antal rader: " + logic.getLineCount() +
+                "\nAntal tecken: " + logic.getCharCount() +
+                "\nAntal ord: " + logic.getWordCount() +
+                "\nLängsta ord: " + logic.getLongestWord());
         //System.out.println("Alla ord: " + counter.getWords());
     }
 }
