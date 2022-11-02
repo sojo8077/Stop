@@ -1,5 +1,3 @@
-package Stop;
-
 public class Logic {
     private String[] wordArr;
     private String words = "";

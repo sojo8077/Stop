@@ -1,5 +1,3 @@
-package Stop;
-
 import java.util.Scanner;
 
 public class Stop {
