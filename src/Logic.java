@@ -46,7 +46,7 @@ public class Logic {
         return wordCount;
     }
 
-    public StringBuilder getLongestWord() {
+    public String getLongestWord() {
         String longest = "";
         StringBuilder longestWords = new StringBuilder();
         for (String word : wordArr) {
@@ -57,7 +57,7 @@ public class Logic {
                 longestWords.append(" ").append(word);
             }
         }
-        return longestWords;
+        return longestWords.toString();
     }
     /*
     public String getWords() {

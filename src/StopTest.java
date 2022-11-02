@@ -46,7 +46,7 @@ public class StopTest {
         logic.getLongestWord();
 
         String expected = "Hallå halåå";
-        String actual = logic.getLongestWord().toString();
+        String actual = logic.getLongestWord();
 
         assertEquals(expected, actual);
     }
