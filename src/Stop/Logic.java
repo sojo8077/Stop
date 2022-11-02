@@ -1,6 +1,6 @@
 package Stop;
 
-public class Counter {
+public class Logic {
     private String[] wordArr;
     private String words = "";
     private boolean stop;

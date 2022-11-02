@@ -5,20 +5,20 @@ import java.util.Scanner;
 public class Stop {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Counter counter = new Counter();
+        Logic logic = new Logic();
         String input;
 
         System.out.println("Skriv valfri text. \nOm du vill avsluta skriv \"stop\" på en ny rad och tryck enter.");
-        while (!counter.getStop()) {
+        while (!logic.getStop()) {
             input = scan.nextLine();
-            counter.checkIfStop(input);
-            counter.add(input);
+            logic.checkIfStop(input);
+            logic.add(input);
         }
-        counter.countWords();
-        System.out.println("Antal rader: " + counter.getLineCount());
-        System.out.println("Antal tecken: " + counter.getCharCount());
-        System.out.println("Antal ord: " + counter.getWordCount());
-        System.out.println("Längsta ord: " + counter.getLongestWord());
+        logic.countWords();
+        System.out.println("Antal rader: " + logic.getLineCount());
+        System.out.println("Antal tecken: " + logic.getCharCount());
+        System.out.println("Antal ord: " + logic.getWordCount());
+        System.out.println("Längsta ord: " + logic.getLongestWord());
         //System.out.println("Alla ord: " + counter.getWords());
     }
 }

@@ -7,48 +7,48 @@ import static org.junit.Assert.assertEquals;
 public class StopTest {
     @Test
     public void checkIfStop() {
-        Counter counter = new Counter();
-        counter.checkIfStop(" stop  ");
+        Logic logic = new Logic();
+        logic.checkIfStop(" stop  ");
 
         boolean expected = true;
-        boolean actual = counter.getStop();
+        boolean actual = logic.getStop();
 
         assertEquals(expected, actual);
     }
 
     @Test
     public void addCharCount() {
-        Counter counter = new Counter();
-        counter.add("Hallå hej  halåå");
-        counter.add("Wow");
+        Logic logic = new Logic();
+        logic.add("Hallå hej  halåå");
+        logic.add("Wow");
 
         int expected = 19;
-        int actual = counter.getCharCount();
+        int actual = logic.getCharCount();
 
         assertEquals(expected, actual);
     }
 
     @Test
     public void countWords() {
-        Counter counter = new Counter();
-        counter.add("      Hallå hej  halåå        ");
-        counter.countWords();
+        Logic logic = new Logic();
+        logic.add("      Hallå hej  halåå        ");
+        logic.countWords();
 
         int expected = 3;
-        int actual = counter.getWordCount();
+        int actual = logic.getWordCount();
 
         assertEquals(expected, actual);
     }
 
     @Test
     public void getLongestWord() {
-        Counter counter = new Counter();
-        counter.add("Hallå hej  halåå   ");
-        counter.countWords();
-        counter.getLongestWord();
+        Logic logic = new Logic();
+        logic.add("Hallå hej  halåå   ");
+        logic.countWords();
+        logic.getLongestWord();
 
         String expected = "Hallå halåå";
-        String actual = counter.getLongestWord().toString();
+        String actual = logic.getLongestWord().toString();
 
         assertEquals(expected, actual);
     }
