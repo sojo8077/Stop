@@ -26,8 +26,12 @@ public class Logic {
         }
     }
 
+    public void createArray() {
+        words = words.trim().replaceAll(" +", " ");
+        wordArr = words.split(" ");
+    }
+
     public void countWords() {
-        createArray();
         if (!words.isBlank()) {
             wordCount = wordArr.length;
         } else {
@@ -59,9 +63,5 @@ public class Logic {
             }
         }
         return longestWords.toString();
-    }
-    public void createArray(){
-        words = words.trim().replaceAll(" +", " ");
-        wordArr = words.split(" ");
     }
 }

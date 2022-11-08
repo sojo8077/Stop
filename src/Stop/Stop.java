@@ -14,6 +14,7 @@ public class Stop {
             logic.checkIfStop(input);
             logic.add(input);
         }
+        logic.createArray();
         logic.countWords();
         System.out.println("Antal rader: " + logic.getLineCount() +
                 "\nAntal tecken: " + logic.getCharCount() +
