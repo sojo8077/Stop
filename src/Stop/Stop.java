@@ -19,6 +19,5 @@ public class Stop {
                 "\nAntal tecken: " + logic.getCharCount() +
                 "\nAntal ord: " + logic.getWordCount() +
                 "\nLängsta ord: " + logic.getLongestWord());
-        //System.out.println("Alla ord: " + counter.getWords());
     }
 }

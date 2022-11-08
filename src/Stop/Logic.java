@@ -61,9 +61,4 @@ public class Logic {
         }
         return longestWords.toString();
     }
-    /*
-    public String getWords() {
-        return words;
-    }
-    */
 }
