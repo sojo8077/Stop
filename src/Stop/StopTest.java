@@ -44,7 +44,7 @@ public class StopTest {
     public void getLongestWord() {
         Logic logic = new Logic();
         logic.add("Hallå hej  halåå   ");
-        logic.countWords();
+        logic.createArray();
         logic.getLongestWord();
 
         String expected = "Hallå halåå";
