@@ -32,6 +32,7 @@ public class StopTest {
     public void countWords() {
         Logic logic = new Logic();
         logic.add("      Hallå hej  halåå        ");
+        logic.createArray();
         logic.countWords();
 
         int expected = 3;
